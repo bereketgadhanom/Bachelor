@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function hjem(){
+    public function index(){
         $title = "Welcome to my page";
         // return view('pages.hjem', compact('title'));
-        return view('pages.hjem')->with('title', $title);
+        return view('pages.index')->with('title', $title);
     }
 
     public function about(){

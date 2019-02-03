@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a href="/posts/create" class="btn btn-primary"> Create post</a>
-                    
+
+                    You are logged in!
                 </div>
             </div>
         </div>

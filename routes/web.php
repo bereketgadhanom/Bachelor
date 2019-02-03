@@ -32,3 +32,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // shortcut, instead of mentioning each post pages 
 Auth::routes();
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
