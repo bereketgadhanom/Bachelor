@@ -1,6 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
-    <h1>Welcome to services page</h1>
-    <p>This is services page</p>
+<h1>{{$title}}</h1>
+    @if(count($studiene) > 0)
+        <ul class="list-group">
+            @foreach($studiene as $studie)
+                <li class="list-group-item"> {{$studie}} </li>
+            @endforeach
+        </ul>
+    @endif
 @endsection
